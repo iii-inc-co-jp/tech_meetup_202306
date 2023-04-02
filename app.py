@@ -3,6 +3,7 @@ from api import api
 
 # Flask本体
 app = Flask(__name__)
+app.config["JSON_AS_ASCII"] = False
 
 # Blueprint登録
 app.register_blueprint(api)
