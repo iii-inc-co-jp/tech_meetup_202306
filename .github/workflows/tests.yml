@@ -50,9 +50,3 @@ jobs:
           name: test_results
           path: artifacts
 
-      # テスト結果をGitHub上で表示する
-      - name: display results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        with:
-          files: artifacts/**/*.xml
-
