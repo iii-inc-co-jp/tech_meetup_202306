@@ -1,5 +1,6 @@
 from service import Service
 
+
 def test_get_user():
     target = Service()
     user = target.get_user('001')
