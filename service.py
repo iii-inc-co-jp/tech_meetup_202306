@@ -10,5 +10,4 @@ class Service():
 
     def get_user(self, user_id):
         json_object = list(filter(lambda item : item['user_id'] == user_id, self.json_load['users']))
-#        return json_object[0]
-        return json_object[0]['name']
+        return json_object[0]
