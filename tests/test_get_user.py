@@ -14,3 +14,10 @@ def test_get_user2():
     assert user['user_id'] == '002'
     assert user['name'] == 'テスト　２'
     assert user['age'] == 32
+
+def test_get_user3():
+    target = Service()
+    user = target.get_user('003')
+    assert user['user_id'] == '003'
+    assert user['name'] == 'テスト　３'
+    assert user['age'] == 15
